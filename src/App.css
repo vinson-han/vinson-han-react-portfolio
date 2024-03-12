@@ -1,0 +1,175 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav,
+footer {
+  background-color: #002b5c;
+  color: white;
+}
+
+nav ul,
+footer ul {
+  margin: 0;
+  padding: 1.5rem;
+  list-style: none;
+}
+
+footer li {
+  font-size: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav h4 {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  display: block;
+}
+
+nav li:hover {
+  color: #ffa500;
+}
+nav a:hover {
+  color: #ffa500;
+}
+
+article a {
+  color: #002b5c;
+  font-size: large;
+}
+
+article a:hover {
+  color: #ffa500;
+}
+
+.filter_white {
+  filter: invert(1) brightness(118%) contrast(119%);
+}
+
+.filter_white:hover {
+  filter: invert(67%) sepia(39%) saturate(3603%) hue-rotate(360deg)
+    brightness(105%) contrast(105%);
+}
+
+main {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  min-height: 100vh;
+}
+main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+main aside {
+}
+
+/* Figure Cards */
+
+figure {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+}
+
+img {
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+
+/* figcaption {
+  opacity: 0.7;
+} */
+
+figure {
+  margin: 0;
+  padding: 0;
+
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+}
+
+figure:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+  background-color: white;
+  font-size: 1rem;
+  text-align: start;
+  padding: 1rem;
+}
+/* reduces the top margin on the h2, bottom on the p, and leaves a 0.5rem gap between the two */
+figcaption * {
+  margin: 0.5rem;
+}
+/* hack to make images flexible */
+figure img {
+  width: 100%;
+  max-width: 550px;
+
+  object-fit: cover;
+}
+
+/* Figure Card End */
+
+@media (min-width: 650px) {
+  nav ul {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
+/* Tablet CSS */
+
+/* Desktop */
+@media (min-width: 980px) {
+  nav ul {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  .title {
+    margin-right: auto;
+    flex-basis: auto;
+    margin-left: 2rem;
+  }
+  footer li {
+    text-align: start;
+  }
+}

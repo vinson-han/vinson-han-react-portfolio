@@ -1,4 +1,9 @@
 import kabanImage from "../img/kabanImage.jpg";
+import memeImage from "../img/memeGenerator.jpg";
+import classAverage from "../img/classAverage.jpg";
+import githubImage from "../img/github.png";
+
+import Card from "./Card";
 
 const Home = () => {
   return (
@@ -8,24 +13,49 @@ const Home = () => {
     // Refer to your original portfolio
     <main>
       <aside>
-        <h3>Porttfolio Project</h3>
-        <p id="roles">{}</p>
+        <h3>
+          {" "}
+          <p id="roles">Hi, my name is Vinson. Check out my Work.</p>
+        </h3>
       </aside>
-
       <article className="project">
-        <figure>
-          <img
-            src={kabanImage}
-            // alt="Image of bubbles through a microscope."
+        <div className="projectItem">
+          <Card
+            img={kabanImage}
+            title="Kaban"
+            tech="React | Tailwind"
+            content="Drag and Drop Application"
+            demoLink="https://kabanapp.netlify.app/"
+            codeLink="https://github.com/vinson-han/Kaban"
           />
-          <figcaption>
-            <h2>KABAN</h2>
-            <h3>React | Tailwind</h3>
-            <p>Drag and Drop Kaban Application</p>
-            <a href="https://kabanapp.netlify.app/">Demo</a> |
-            <a href="https://github.com/vinson-han/toDO">Code</a>
-          </figcaption>
-        </figure>
+        </div>
+        <div className="projectItem">
+          <Card
+            img={memeImage}
+            title="Meme Generator"
+            tech="React | CSS"
+            content="React Single Page Application that generates Memes"
+            codeLink="https://github.com/vinson-han/MemeGenerator"
+          />
+        </div>
+        <div className="projectItem">
+          <Card
+            img={githubImage}
+            title="Github Repo Search"
+            tech="React | Tailwind | Express | MongoDB"
+            content="Fullstack Application that allows you to search Github Repos"
+            codeLink="https://github.com/vinson-han/githhub"
+          />
+        </div>
+        <div className="projectItem">
+          <Card
+            img={classAverage}
+            title="Class Average"
+            tech="React | Tailwind"
+            content="Class Average Calculation"
+            codeLink="https://github.com/vinson-han/reactCalculateClassRoomAverage"
+          />
+        </div>
       </article>
     </main>
   );

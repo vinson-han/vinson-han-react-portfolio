@@ -1,13 +1,27 @@
 const Summary = () => {
   return (
-    <>
-      <h2>Hi 👋, welcome to my page.</h2>
+    <div className="summary">
+      <h2>🌟 Hi 👋, my name is Vinson Han</h2>
       <p>
-        My name is Vinson and I have 5 year in the healtcare industry. I'm
-        looking to leverage my Full Stack Development skill and create meaning
-        ideas and project. Let's connect! Here my website for more info.
+        👨‍💼 Title: Former Healthcare Professional turned Fullstack Developer 📍
       </p>
-    </>
+      <p>Location: Los Angeles, California</p>
+      <p>
+        💼 Specialty Skills: React (Frontend Development), Node.js (Backend
+        Solutions), MongoDB (Data Management)
+      </p>
+      <p>
+        🌍 Mission Statement / Values: I am driven by a passion for equitable
+        and accessible technology. With a solid foundation in healthcare, I
+        bring a unique perspective to the tech sector, emphasizing empathy,
+        problem-solving, and a commitment to inclusion. My ultimate goal is to
+        leverage technology for positive social impact, creating meaningful
+        solutions that address real-world challenges and empower communities.
+        Let's connect and collaborate to build something truly impactful
+        together!
+      </p>
+      <p> To Contact Me Click on the link above</p>
+    </div>
   );
 };
 const About = () => {

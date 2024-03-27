@@ -60,9 +60,7 @@ const Navbar = () => {
 
 const Footer = () => {
   const date = new Date().getFullYear();
-
   const footer = `\u00A9 ${date} VinsonDev. All Rights Reserved`;
-
   return (
     <footer>
       <ul>
@@ -82,8 +80,8 @@ function App() {
           <Route path="/about" element={<About />} />
           {/* <Route path="/contact" element={<Contact phone={"###-###-###"} />} /> */}
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </>
   );
 }

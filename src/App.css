@@ -85,14 +85,6 @@ main {
   text-align: center;
   min-height: 100vh;
 }
-main {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
-main aside {
-}
 
 /* Figure Cards */
 
@@ -114,8 +106,8 @@ img {
 figure {
   margin: 0;
   padding: 0;
-
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  border: #999999 solid 2px;
 }
 
 figure:hover {
@@ -136,12 +128,31 @@ figcaption * {
 /* hack to make images flexible */
 figure img {
   width: 100%;
-  max-width: 550px;
-
   object-fit: cover;
+  border-bottom: #999999 solid 2px;
 }
 
 /* Figure Card End */
+
+.project {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projectItem {
+  flex-basis: 40%;
+}
+
+.summary {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1080px) {
+  .projectItem {
+  }
+}
 
 @media (min-width: 650px) {
   nav ul {
@@ -152,6 +163,10 @@ figure img {
   .title {
     text-align: center;
     flex-basis: 100%;
+  }
+
+  .projectItem {
+    width: 100%;
   }
 }
 /* Tablet CSS */

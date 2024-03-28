@@ -16,7 +16,9 @@ const Navbar = () => {
       <nav className="menu">
         <ul>
           <li className="title">
-            <h4>🖥️ VINSON DEV ⌨️</h4>
+            <h4>
+              <a href="/">🖥️ VINSON DEV ⌨️</a>
+            </h4>
           </li>
           <li className="github">
             <a href="https://github.com/vinson-han" target="_blank">

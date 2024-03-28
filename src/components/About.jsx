@@ -20,7 +20,7 @@ const Summary = () => {
         Let's connect and collaborate to build something truly impactful
         together!
       </p>
-      <p> To Contact Me Click on the link above</p>
+      <p> To Contact @ Vinson.han21@gmail.com</p>
     </div>
   );
 };

@@ -35,6 +35,7 @@ const Home = () => {
             title="Meme Generator"
             tech="React | CSS"
             content="React Single Page Application that generates Memes"
+            demoLink="https://thememegenerators.netlify.app/"
             codeLink="https://github.com/vinson-han/MemeGenerator"
           />
         </div>

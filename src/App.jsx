@@ -17,7 +17,7 @@ const Navbar = () => {
         <ul>
           <li className="title">
             <h4>
-              <a href="/">🖥️ VINSON DEV ⌨️</a>
+              <a href="/">🖥️ VINSON DEV!⌨️</a>
             </h4>
           </li>
           <li className="github">

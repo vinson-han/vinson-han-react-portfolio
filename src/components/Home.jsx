@@ -3,7 +3,7 @@ import memeImage from "../img/memeGenerator.jpg";
 import classAverage from "../img/classAverage.jpg";
 import githubImage from "../img/github.png";
 import google from "../img/GoogleMake.png";
-import bolt from "../img/Bolt/png";
+import bolt from "../img/Bolt.png";
 import note from "../img/NoteLM.png";
 import anki from "../img/Anki.png"
 

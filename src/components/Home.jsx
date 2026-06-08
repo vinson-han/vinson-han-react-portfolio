@@ -7,18 +7,16 @@ import Card from "./Card";
 
 const Home = () => {
   return (
-    // Add elements inside here to visually indicate that this
-    // component is rendering
-    // Your Home page should greet your user and explain your role
-    // Refer to your original portfolio
     <main>
       <aside>
-        <h3>
-          {" "}
-          <p id="roles">Hi, my name is Vinson. This is my Case-Study on building a Language Learning System with AI.</p>
-        </h3>
+        <p id="roles">
+          Hi, my name is Vinson. This is my Case-Study on building a Language Learning System with AI.
+        </p>
       </aside>
-     /* <article className="project">
+
+      {/* Uncomment this section to display projects */}
+      {/*
+      <article className="project">
         <div className="projectItem">
           <Card
             img={kabanImage}
@@ -45,7 +43,7 @@ const Home = () => {
             title="Github Repo Search"
             tech="React | Tailwind | Express | MongoDB"
             content="Fullstack Application that allows you to search Github Repos"
-            codeLink="https://github.com/vinson-han/githhub"
+            codeLink="https://github.com/vinson-han/github"
           />
         </div>
         <div className="projectItem">
@@ -58,7 +56,7 @@ const Home = () => {
           />
         </div>
       </article>
-      */
+      */}
     </main>
   );
 };

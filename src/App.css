@@ -188,3 +188,327 @@ figure img {
     text-align: start;
   }
 }
+
+/* =============================================
+   CASE STUDY LAYOUT
+   ============================================= */
+
+.cs-main {
+  background-color: #fafaf8;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  min-height: 100vh;
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1rem;
+}
+
+/* --- Hero --- */
+
+.cs-hero {
+  background-color: #002b5c;
+  color: #fff;
+  padding: 5.5rem 2rem 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.cs-hero__inner {
+  max-width: 820px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.cs-hero__label {
+  font-family: 'Spectral', serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  display: block;
+  margin-bottom: 1.6rem;
+}
+
+.cs-hero__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  margin: 0 0 2.25rem;
+  color: #fff;
+}
+
+.cs-hero__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'Spectral', serif;
+}
+
+.cs-hero__author {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.cs-hero__divider {
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.cs-hero__tags {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cs-hero__accent {
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 165, 0, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* --- Body --- */
+
+.cs-body {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 4.5rem 2rem 7rem;
+}
+
+/* --- Sections --- */
+
+.cs-section {
+  margin-bottom: 5rem;
+  border-bottom: 1px solid #e6e3da;
+  padding-bottom: 5rem;
+}
+
+.cs-section--last {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.cs-section__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+}
+
+.cs-section__num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: #002b5c;
+  flex-shrink: 0;
+  opacity: 0.65;
+}
+
+.cs-section__rule {
+  width: 36px;
+  height: 1px;
+  background-color: #002b5c;
+  opacity: 0.2;
+  flex-shrink: 0;
+}
+
+.cs-section__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: #111827;
+  letter-spacing: -0.015em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cs-section__content p {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.88;
+  color: #3d3d4f;
+  margin: 0 0 1.3rem;
+  font-weight: 400;
+}
+
+.cs-section__content p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Disclosure block --- */
+
+.cs-disclosure {
+  background-color: #f0efea;
+  border-left: 3px solid #002b5c;
+  padding: 1.6rem 1.8rem;
+}
+
+.cs-disclosure p {
+  font-size: 0.95rem !important;
+  color: #4a4a5c !important;
+  line-height: 1.75 !important;
+}
+
+/* --- Tools List --- */
+
+.cs-tools {
+  margin-top: 3rem;
+}
+
+.cs-tools__heading {
+  font-family: 'Spectral', serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #999;
+  margin: 0 0 0.75rem;
+}
+
+.cs-tools__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cs-tool-item {
+  display: grid;
+  grid-template-columns: 2.25rem 88px 1fr;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.4rem 0;
+  border-top: 1px solid #e6e3da;
+  transition: transform 0.18s ease;
+}
+
+.cs-tool-item:last-child {
+  border-bottom: 1px solid #e6e3da;
+}
+
+.cs-tool-item:hover {
+  transform: translateX(4px);
+}
+
+.cs-tool-item__num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #ccc;
+  text-align: right;
+}
+
+.cs-tool-item__img-wrap {
+  width: 88px;
+  height: 66px;
+  overflow: hidden;
+  border: 1px solid #e6e3da;
+  border-radius: 6px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cs-tool-item__img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  padding: 8px;
+  grid-row: auto !important;
+  grid-column: auto !important;
+  border-bottom: none !important;
+}
+
+.cs-tool-item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.cs-tool-item__name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.cs-tool-item__desc {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: #6b6b7e;
+  margin: 0;
+}
+
+.cs-tool-item__demo {
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #002b5c;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  margin-top: 0.35rem;
+  display: inline-block;
+  border-bottom: 1px solid rgba(0, 43, 92, 0.3);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.cs-tool-item__demo:hover {
+  color: #ffa500;
+  border-color: #ffa500;
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 640px) {
+  .cs-hero {
+    padding: 4rem 1.5rem 3.5rem;
+  }
+
+  .cs-body {
+    padding: 3rem 1.5rem 5rem;
+  }
+
+  .cs-section {
+    margin-bottom: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .cs-hero__divider {
+    display: none;
+  }
+
+  .cs-hero__meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .cs-tool-item {
+    grid-template-columns: 1.75rem 68px 1fr;
+    gap: 1rem;
+  }
+
+  .cs-tool-item__img-wrap {
+    width: 68px;
+    height: 54px;
+  }
+
+  .cs-section__title {
+    font-size: 1.35rem;
+  }
+}

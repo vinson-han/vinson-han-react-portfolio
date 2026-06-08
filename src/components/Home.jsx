@@ -18,7 +18,7 @@ const Home = () => {
           <p id="roles">Hi, my name is Vinson. This is my Case-Study on building a Language Learning System with AI.</p>
         </h3>
       </aside>
-      <article className="project">
+     /* <article className="project">
         <div className="projectItem">
           <Card
             img={kabanImage}
@@ -58,6 +58,7 @@ const Home = () => {
           />
         </div>
       </article>
+      */
     </main>
   );
 };

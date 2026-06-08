@@ -15,7 +15,7 @@ const Home = () => {
       <aside>
         <h3>
           {" "}
-          <p id="roles">Hi, my name is Vinson. Check out my Work.</p>
+          <p id="roles">Hi, my name is Vinson. This is my Case-Study on building a Language Learning System with AI.</p>
         </h3>
       </aside>
       <article className="project">

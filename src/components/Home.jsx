@@ -5,7 +5,7 @@ import githubImage from "../img/github.png";
 import google from "../img/GoogleMake.png";
 import bolt from "../img/Bolt/png";
 import note from "../img/NoteLM.png";
-import Anki from "../img/Anki.png"
+import anki from "../img/Anki.png"
 
 import Card from "./Card";
 
@@ -35,7 +35,7 @@ const Home = () => {
           <img src={google} alt="Solution placeholder 1" className="solution-img" />
           <img src={note} alt="Solution placeholder 2" className="solution-img" />
           <img src={bolt} alt="Solution placeholder 3" className="solution-img" />
-          <img src={Anki} alt="Solution placeholder 4" className="solution-img" />
+          <img src={anki} alt="Solution placeholder 4" className="solution-img" />
         </div>
 
         <h2>The Results</h2>
